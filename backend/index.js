@@ -11,6 +11,11 @@ mongoose.connect('mongodb://localhost:27017/pharmahope', {
   useUnifiedTopology: true
 });
 
+// نقطة ترحيب رئيسية
+app.get('/', (req, res) => {
+  res.send('مرحبًا بك في PharmaHope API! استخدم /api/drugs لرؤية البيانات.');
+});
+
 const drugSchema = new mongoose.Schema({
   name: String,
   quantity: Number,
