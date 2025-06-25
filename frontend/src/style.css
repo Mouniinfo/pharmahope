@@ -1,0 +1,62 @@
+body, .container { background: #f4f7fa; }
+.container {
+  font-family: 'Cairo', Tahoma, Arial, sans-serif;
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 16px #0001;
+  direction: rtl;
+}
+h1 { color: #2c3e50; }
+nav { margin-bottom: 30px; }
+nav button {
+  margin: 5px; padding: 8px 18px;
+  background: #eee; border: none; border-radius: 5px;
+  font-weight: bold; cursor: pointer; color: #333;
+}
+nav button.active { background: #2c3e50; color: #fff; }
+form.form-row, form.form-col { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+form.form-col { flex-direction: column; max-width: 400px; }
+form input, form select, form textarea { padding: 6px; border: 1px solid #ccc; border-radius: 5px; }
+form textarea { resize: vertical; }
+form button { background: #2c3e50; color: #fff; border: none; border-radius: 5px; padding: 7px 15px; cursor: pointer; }
+form button[type="button"] { background: #aaa; }
+.filters { display: flex; gap: 10px; margin-bottom: 10px; }
+.search { width: 180px; padding: 6px; border-radius: 5px; border: 1px solid #ccc; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; background: #f9fafb; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+th { background: #e3edf7; }
+td button { margin: 0 2px; padding: 3px 10px; border-radius: 4px; border: none; cursor: pointer; }
+td button:first-child { background: #f7b731; color: #fff; }
+td button:last-child { background: #eb2f06; color: #fff; }
+footer { margin-top: 40px; color: #888; font-size: 14px; text-align: center; }
+.about-section, .contact-section {
+  max-width: 600px;
+  margin: 0 auto 2em auto;
+  padding: 20px 24px;
+  background: #f7fbfe;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px #0001;
+}
+.success-msg {
+  background: #d4edda;
+  color: #155724;
+  padding: 10px 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #c3e6cb;
+  text-align: center;
+}
+.error-msg {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 10px 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #f5c6cb;
+  text-align: center;
+}
+.contact-info ul { list-style: none; padding: 0; }
+.contact-info li { margin-bottom: 6px; }
